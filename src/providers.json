@@ -210,5 +210,171 @@
         "url": "https://syd1.digitaloceanspaces.com/"
       }
     ]
+  },
+  {
+    "name": "Vultr",
+    "url": "https://www.vultr.com/",
+    "nodes": [
+      {
+        "zone": "jnb-za",
+        "city": "Johannesburg 🇿🇦",
+        "url": "https://jnb-za-ping.vultr.com/robots.txt"
+      },
+      {
+        "zone": "waw-pl",
+        "city": "Warsaw 🇵🇱",
+        "url": "https://waw-pl-ping.vultr.com/robots.txt"
+      },
+      {
+        "zone": "sto-se",
+        "city": "Stockholm 🇸🇪",
+        "url": "https://sto-se-ping.vultr.com/robots.txt"
+      },
+      {
+        "zone": "tlv-il",
+        "city": "Tel Aviv 🇮🇱",
+        "url": "https://tlv-il-ping.vultr.com/robots.txt"
+      },
+      {
+        "zone": "fra-de",
+        "city": "Frankfurt 🇩🇪",
+        "url": "https://fra-de-ping.vultr.com/robots.txt"
+      },
+      {
+        "zone": "ams-nl",
+        "city": "Amsterdam 🇳🇱",
+        "url": "https://ams-nl-ping.vultr.com/robots.txt"
+      },
+      {
+        "zone": "del-in",
+        "city": "Delhi 🇮🇳",
+        "url": "https://del-in-ping.vultr.com/robots.txt"
+      },
+      {
+        "zone": "par-fr",
+        "city": "Paris 🇫🇷",
+        "url": "https://par-fr-ping.vultr.com/robots.txt"
+      },
+      {
+        "zone": "lon-gb",
+        "city": "London 🇬🇧",
+        "url": "https://lon-gb-ping.vultr.com/robots.txt"
+      },
+      {
+        "zone": "man-uk",
+        "city": "London 🇬🇧",
+        "url": "https://man-uk-ping.vultr.com/robots.txt"
+      },
+      {
+        "zone": "bom-in",
+        "city": "Mumbai 🇮🇳",
+        "url": "https://bom-in-ping.vultr.com/robots.txt"
+      },
+      {
+        "zone": "mad-es",
+        "city": "Madrid 🇪🇸",
+        "url": "https://mad-es-ping.vultr.com/robots.txt"
+      },
+      {
+        "zone": "blr-in",
+        "city": "Bangalore 🇮🇳",
+        "url": "https://blr-in-ping.vultr.com/robots.txt"
+      },
+      {
+        "zone": "sel-kor",
+        "city": "Seoul 🇰🇷",
+        "url": "https://sel-kor-ping.vultr.com/robots.txt"
+      },
+      {
+        "zone": "osk-jp",
+        "city": "Osaka 🇯🇵",
+        "url": "https://osk-jp-ping.vultr.com/robots.txt"
+      },
+      {
+        "zone": "hnd-jp",
+        "city": "Tokyo 🇯🇵",
+        "url": "https://hnd-jp-ping.vultr.com/robots.txt"
+      },
+      {
+        "zone": "sgp",
+        "city": "Singapore 🇸🇬",
+        "url": "https://sgp-ping.vultr.com/robots.txt"
+      },
+      {
+        "zone": "tor-ca",
+        "city": "Toronto 🇨🇦",
+        "url": "https://tor-ca-ping.vultr.com/robots.txt"
+      },
+      {
+        "zone": "nj-us",
+        "city": "New Jersey 🇺🇸",
+        "url": "https://nj-us-ping.vultr.com/robots.txt"
+      },
+      {
+        "zone": "wa-us",
+        "city": "Seattle 🇺🇸",
+        "url": "https://wa-us-ping.vultr.com/robots.txt"
+      },
+      {
+        "zone": "il-us",
+        "city": "Chicago 🇺🇸",
+        "url": "https://il-us-ping.vultr.com/robots.txt"
+      },
+      {
+        "zone": "hon-hi-us",
+        "city": "Honolulu 🇺🇸",
+        "url": "https://hon-hi-us-ping.vultr.com/robots.txt"
+      },
+      {
+        "zone": "ga-us",
+        "city": "Atlanta 🇺🇸",
+        "url": "https://ga-us-ping.vultr.com/robots.txt"
+      },
+      {
+        "zone": "sjo-ca-us",
+        "city": "Silicon Valley 🇺🇸",
+        "url": "https://sjo-ca-us-ping.vultr.com/robots.txt"
+      }, 
+      {
+        "zone": "tx-us",
+        "city": "Dallas 🇺🇸",
+        "url": "https://tx-us-ping.vultr.com/robots.txt"
+      },
+      {
+        "zone": "fl-us",
+        "city": "Miami 🇺🇸",
+        "url": "https://fl-us-ping.vultr.com/robots.txt"
+      },
+      {
+        "zone": "lax-ca-us",
+        "city": "Los Angeles 🇺🇸",
+        "url": "https://lax-ca-us-ping.vultr.com/robots.txt"
+      },
+      {
+        "zone": "mex-mx",
+        "city": "Mexico City 🇲🇽",
+        "url": "https://mex-mx-ping.vultr.com/robots.txt"
+      },
+      {
+        "zone": "sao-br",
+        "city": "São Paulo 🇧🇷",
+        "url": "https://sao-br-ping.vultr.com/robots.txt"
+      },
+      {
+        "zone": "mel-au",
+        "city": "Melbourne 🇦🇺",
+        "url": "https://mel-au-ping.vultr.com/robots.txt"
+      },
+      {
+        "zone": "syd-au",
+        "city": "Sydney 🇦🇺",
+        "url": "https://syd-au-ping.vultr.com/robots.txt"
+      },
+      {
+        "zone": "scl-cl",
+        "city": "Santiago 🇨🇱",
+        "url": "https://scl-cl-ping.vultr.com/robots.txt"
+      }
+    ]
   }
 ]
