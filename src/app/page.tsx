@@ -5,11 +5,7 @@ import Image from 'next/image';
 
 import Ping from '@/components/Ping';
 import providers from '@/providers.json';
-
-export const PingContext = React.createContext({
-  minimum: 0,
-  setMinimum: (_minimum: number) => { }
-});
+import { PingContext } from "@/util/util";
 
 export default function Home() {
   const [minimum, setMinimum] = useState(0);

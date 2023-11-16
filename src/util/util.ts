@@ -1,3 +1,10 @@
+import React from "react";
+
+export const PingContext = React.createContext({
+  minimum: 0,
+  setMinimum: (_minimum: number) => { }
+});
+
 export const numberToColor = (min: number, max: number, value: number) => {
   // Ensure value is within range
   value = Math.min(Math.max(value, min), max);

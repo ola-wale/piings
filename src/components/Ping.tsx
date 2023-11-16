@@ -1,4 +1,4 @@
-import { PingContext } from "@/app/page";
+import { PingContext } from "@/util/util";
 import { numberToColor } from "@/util/util";
 
 import { useEffect, useState, useContext, useRef } from 'react';
