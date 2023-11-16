@@ -1,0 +1,214 @@
+[
+  {
+    "name": "AWS",
+    "url": "https://aws.amazon.com",
+    "nodes": [
+      {
+        "zone": "us-east-1",
+        "city": "Virginia 🇺🇸",
+        "url": "https://dynamodb.us-east-1.amazonaws.com/ping"
+      },
+      {
+        "zone": "us-east-2",
+        "city": "Ohio 🇺🇸",
+        "url": "https://dynamodb.us-east-2.amazonaws.com/ping"
+      },
+      {
+        "zone": "us-west-1",
+        "city": "California 🇺🇸",
+        "url": "https://dynamodb.us-west-1.amazonaws.com/ping"
+      },
+      {
+        "zone": "us-west-2",
+        "city": "Oregon 🇺🇸",
+        "url": "https://dynamodb.us-west-2.amazonaws.com/ping"
+      },
+      {
+        "zone": "ca-central-1",
+        "city": "Central 🇨🇦",
+        "url": "https://dynamodb.ca-central-1.amazonaws.com/ping"
+      },
+      {
+        "zone": "eu-west-1",
+        "city": "Ireland 🇮🇪",
+        "url": "https://dynamodb.eu-west-1.amazonaws.com/ping"
+      },
+      {
+        "zone": "eu-west-2",
+        "city": "London 🇬🇧",
+        "url": "https://dynamodb.eu-west-2.amazonaws.com/ping"
+      },
+      {
+        "zone": "eu-west-3",
+        "city": "Paris 🇫🇷",
+        "url": "https://dynamodb.eu-west-3.amazonaws.com/ping"
+      },
+      {
+        "zone": "eu-central-1",
+        "city": "Frankfurt 🇩🇪",
+        "url": "https://dynamodb.eu-central-1.amazonaws.com/ping"
+      },
+      {
+        "zone": "eu-central-2",
+        "city": "Zurich 🇨🇭",
+        "url": "https://dynamodb.eu-central-2.amazonaws.com/ping"
+      },
+      {
+        "zone": "eu-north-1",
+        "city": "Stockholm 🇸🇪",
+        "url": "https://dynamodb.eu-north-1.amazonaws.com/ping"
+      },
+      {
+        "zone": "eu-south-1",
+        "city": "Milan 🇮🇹",
+        "url": "https://dynamodb.eu-south-1.amazonaws.com/ping"
+      },
+      {
+        "zone": "eu-south-2",
+        "city": "Spain 🇪🇸",
+        "url": "https://dynamodb.eu-south-2.amazonaws.com/ping"
+      },
+      {
+        "zone": "il-central-1",
+        "city": "Tel Aviv 🇮🇱",
+        "url": "https://dynamodb.il-central-1.amazonaws.com/ping"
+      },
+      {
+        "zone": "me-south-1",
+        "city": "Bahrain 🇧🇭",
+        "url": "https://dynamodb.me-south-1.amazonaws.com/ping"
+      },
+      {
+        "zone": "me-central-1",
+        "city": "UAE 🇦🇪",
+        "url": "https://streams.dynamodb.me-central-1.amazonaws.com/ping"
+      },
+      {
+        "zone": "af-south-1",
+        "city": "Cape Town 🇿🇦",
+        "url": "https://dynamodb.af-south-1.amazonaws.com/ping"
+      },
+      {
+        "zone": "ap-east-1",
+        "city": "Hong Kong 🇭🇰",
+        "url": "https://dynamodb.ap-east-1.amazonaws.com/ping"
+      },
+      {
+        "zone": "ap-southeast-3",
+        "city": "Jakarta 🇮🇩",
+        "url": "https://dynamodb.ap-southeast-3.amazonaws.com/ping"
+      },
+      {
+        "zone": "ap-south-1",
+        "city": "Mumbai 🇮🇳",
+        "url": "https://dynamodb.ap-south-1.amazonaws.com/ping"
+      },
+      {
+        "zone": "ap-south-2",
+        "city": "Hyderabad 🇮🇳",
+        "url": "https://dynamodb.ap-south-2.amazonaws.com/ping"
+      },
+      {
+        "zone": "ap-northeast-3",
+        "city": "Osaka 🇯🇵",
+        "url": "https://dynamodb.ap-northeast-3.amazonaws.com/ping"
+      },
+      {
+        "zone": "ap-northeast-2",
+        "city": "Seoul 🇰🇷",
+        "url": "https://dynamodb.ap-northeast-2.amazonaws.com/ping"
+      },
+      {
+        "zone": "ap-southeast-1",
+        "city": "Singapore 🇸🇬",
+        "url": "https://dynamodb.ap-southeast-1.amazonaws.com/ping"
+      },
+      {
+        "zone": "ap-southeast-2",
+        "city": "Sydney 🇦🇺",
+        "url": "https://dynamodb.ap-southeast-2.amazonaws.com/ping"
+      },
+      {
+        "zone": "ap-northeast-1",
+        "city": "Tokyo 🇯🇵",
+        "url": "https://dynamodb.ap-northeast-1.amazonaws.com/ping"
+      },
+      {
+        "zone": "sa-east-1",
+        "city": "São Paulo 🇧🇷",
+        "url": "https://dynamodb.sa-east-1.amazonaws.com/ping"
+      },
+      {
+        "zone": "cn-north-1",
+        "city": "Beijing 🇨🇳",
+        "url": "https://dynamodb.cn-north-1.amazonaws.com.cn/ping"
+      },
+      {
+        "zone": "cn-northwest-1",
+        "city": "Ningxia 🇨🇳",
+        "url": "https://dynamodb.cn-northwest-1.amazonaws.com.cn/ping"
+      },
+      {
+        "zone": "us-gov-east-1",
+        "city": "Ohio 🇺🇸",
+        "url": "https://dynamodb.us-gov-east-1.amazonaws.com/ping"
+      },
+      {
+        "zone": "us-gov-west-1",
+        "city": "Oregon 🇺🇸",
+        "url": "https://dynamodb.us-gov-west-1.amazonaws.com/ping"
+      }
+    ]
+  },
+  {
+    "name": "Digital Ocean",
+    "url": "https://www.digitalocean.com",
+    "nodes": [
+      {
+        "zone": "nyc1",
+        "city": "New York 🇺🇸",
+        "url": "https://nyc3.digitaloceanspaces.com/"
+      },
+      {
+        "zone": "ams3",
+        "city": "Amsterdam 🇳🇱",
+        "url": "https://ams3.digitaloceanspaces.com/"
+      },
+      {
+        "zone": "sfo2",
+        "city": "San Francisco 🇺🇸",
+        "url": "https://sfo2.digitaloceanspaces.com/"
+      },
+      {
+        "zone": "sgp1",
+        "city": "Singapore 🇸🇬",
+        "url": "https://sgp1.digitaloceanspaces.com/"
+      },
+      {
+        "zone": "lon1",
+        "city": "London 🇬🇧",
+        "url": "https://lon1.digitaloceanspaces.com/"
+      },
+      {
+        "zone": "fra1",
+        "city": "Frankfurt 🇩🇪",
+        "url": "https://fra1.digitaloceanspaces.com/"
+      },
+      {
+        "zone": "tor1",
+        "city": "Toronto 🇨🇦",
+        "url": "https://tor1.digitaloceanspaces.com/"
+      },
+      {
+        "zone": "blr1",
+        "city": "Bangalore 🇮🇳",
+        "url": "https://blr1.digitaloceanspaces.com/"
+      },
+      {
+        "zone": "syd1",
+        "city": "Sydney 🇦🇺",
+        "url": "https://syd1.digitaloceanspaces.com/"
+      }
+    ]
+  }
+]
