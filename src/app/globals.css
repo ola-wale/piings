@@ -6,3 +6,9 @@ body {
   color: rgb(var(--foreground-rgb));
   background: #FFF;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #1a1a1a;
+  }
+}

@@ -14,11 +14,10 @@ const Root = styled.div<{ $isMinimum: boolean }>`
 position: ${props => props.$isMinimum ? 'sticky' : 'relative'};
 top: 0;
 z-index: ${props => props.$isMinimum ? '3' : '2'};
-border: 1px solid gainsboro;
 `
 
 const Zone = styled.h6.attrs({
-  className: "font-medium text-sm"
+  className: "font-medium text-sm dark:text-slate-50"
 })`
 `
 
@@ -93,7 +92,7 @@ export default function Ping({ url, zone, city }: Props) {
   const isMinimum = !!pingTime && pingTime === minimum;
 
   return (
-    <Root $isMinimum={isMinimum} className={"rounded-xl bg-white flex w-full flex-row items-center justify-between p-4 shadow-sm"}>
+    <Root $isMinimum={isMinimum} className={"rounded-xl border border-neutral-300 dark:border-neutral-800 bg-white dark:bg-neutral-800 flex w-full flex-row items-center justify-between p-4 shadow-sm"}>
       <div className="flex flex-col">
         {isMinimum && <div className="flex">
           <div className="text-xs font-medium text-green-600 bg-green-400/10 rounded-full py-1 px-3 xl:flex justify-center">Benchmark</div>
