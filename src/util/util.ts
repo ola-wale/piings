@@ -1,8 +1,9 @@
 import React from "react";
+import { PingTime } from "../../types";
 
 export const PingContext = React.createContext({
-  minimum: 0,
-  setMinimum: (_minimum: number) => { }
+  pingTimes: [] as PingTime[],
+  addPingTime: (time: PingTime) => {},
 });
 
 export const numberToColor = (min: number, max: number, value: number) => {

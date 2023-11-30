@@ -6,10 +6,13 @@ import Image from 'next/image';
 import Ping from '@/components/Ping';
 import providers from '@/providers.json';
 import { PingContext } from "@/util/util";
+import { PingTime } from "../../types";
 
 export default function Home() {
-  const [minimum, setMinimum] = useState(0);
-  const value = { minimum, setMinimum };
+  const [pingTimes, setPingTimes] = useState<PingTime[]>([]);
+
+  const addPingTime = (score: PingTime) => setPingTimes((v:any) => [...v, score]);
+  const value = { pingTimes, addPingTime };
 
   return (
     <PingContext.Provider value={value}>
@@ -19,6 +22,7 @@ export default function Home() {
           <h4 className="text-2xl dark:text-slate-50">Piings</h4>
         </div>
         <p className="text-base text-gray-500">Measure latency between your browser & different cloud providers.</p>
+        <p className="text-gray-500 text-sm mt-2">For each node, 50 requests will be made and the mean latency will be displayed.</p>
         {
           providers.map((provider) => {
             return <div key={provider.name} className="flex flex-col gap-2 mt-5 pt-2 pb-5">
