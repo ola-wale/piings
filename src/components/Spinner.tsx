@@ -1,4 +1,4 @@
-const Spinner = ({ percent, className, ...rest }: { percent: number, className?: string }) => {
+const Spinner = ({ percent, className }: { percent: number, className?: string }) => {
   const circumference = 2 * 30 * Math.PI;
   return <svg className={`w-4 h-4 overflow-visible ${className}`}>
     <circle

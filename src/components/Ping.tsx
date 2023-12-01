@@ -10,10 +10,10 @@ type Props = {
   city: string
 }
 
-const Root = styled.div`
-position: relative;
+const Root = styled.div<{ $isMinimumPing: boolean }>`
+position: ${props => props.$isMinimumPing ? 'sticky' : 'relative'};
 top: 0;
-z-index: 2;
+z-index: ${props => props.$isMinimumPing ? '3' : '2'};
 `
 
 const Zone = styled.h6.attrs({
@@ -32,35 +32,40 @@ const Latency = styled.small.attrs({
 `
 
 export default function Ping({ url, zone, city }: Props) {
-  const { pingTimes, addPingTime } = useContext(PingContext);
-  const [pingInProgress, setPingInProgress] = useState<boolean>(false);
+  // Get the mean ping times from the PingContext
+  const { meanPings, addPingTime, lowestMeanPing, highestMeanPing } = useContext(PingContext);
+  // The number of times the url has been pinged
   const [pingCount, setPingCount] = useState<number>(0);
-
-  const pingId = url;
+  // The id of the ping
+  const id = url;
+  // The maximum number of times to ping the url
   const pingLimit = 50;
 
   useEffect(() => {
+    // Ping the url if the ping count is less than the ping limit
     if (pingCount < pingLimit) {
+      // Ping immediately, per second subsequently
       setTimeout(() => {
         doPing();
       }, pingCount === 0 ? 0 : 1000);
     }
   }, [pingCount]);
 
+  /**
+   * Ping the url
+   */
   const doPing = async () => {
-    setPingInProgress(true);
     try {
       const startTime = currTimeMs();
       await fetchUrl(url);
       const endTime = currTimeMs();
       const elapsed = endTime - startTime;
 
-      addPingTime({ id: pingId, time: elapsed });
+      addPingTime({ id, time: elapsed });
       setPingCount((v) => v + 1);
     } catch (e) {
 
     }
-    setPingInProgress(false);
   }
 
   const currTimeMs = () => (new Date()).getTime();
@@ -83,17 +88,20 @@ export default function Ping({ url, zone, city }: Props) {
     }
   }
 
-  const currentPingTimes = useMemo(() => pingTimes.filter((pingTime) => pingTime.id === pingId), [pingTimes, pingId]);
-  const meanPingTime = useMemo(() => currentPingTimes.length > 0 ? Math.round(currentPingTimes.reduce((a, b) => a + b.time, 0) / currentPingTimes.length) : null, [currentPingTimes]);
+  const meanPing = useMemo(() => meanPings.find(m => m.id === id), [meanPings]);
+  const isMinimumPing = lowestMeanPing?.id === id;
 
   return (
-    <Root className={"rounded-xl border border-neutral-300 dark:border-neutral-800 bg-white dark:bg-neutral-800 flex w-full flex-row items-center justify-between p-4 shadow-sm"}>
+    <Root $isMinimumPing={isMinimumPing} className={"rounded-xl border border-neutral-300 dark:border-neutral-800 bg-white dark:bg-neutral-800 flex w-full flex-row items-center justify-between p-4 shadow-sm"}>
       <div className="flex flex-col">
+        {isMinimumPing && <div className="flex">
+          <div className="text-xs font-medium text-green-600 bg-green-400/10 rounded-full py-1 px-3 xl:flex justify-center">Benchmark</div>
+        </div>}
         <Zone>{zone}</Zone>
         <City>{city}</City>
       </div>
       <div>
-        {!!meanPingTime && <Latency style={{ color: numberToColor(meanPingTime, 1000, meanPingTime) }}>{meanPingTime} ms</Latency>}
+        {!!meanPing && <Latency style={{ color: numberToColor(lowestMeanPing?.time || 0, highestMeanPing?.time || 1000, meanPing.time) }}>{meanPing.time} ms</Latency>}
       </div>
     </Root>
   )
